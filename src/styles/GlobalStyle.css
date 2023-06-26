@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: #1ed760;
+  --main-hover-color: #33a45a;
+  --bg-color: #101010;
+  --bg-inside-color: #1e1e1e;
+  --bg-card: #181818;
+}
+button + button {
+  margin-left: 16px;
+}
+.nav-mobile-menu {
+  display: block !important;
+}
+
+.c-main {
+  color: var(--main-color);
+}
+.c-main-hover {
+  color: var(--main-hover-color);
+}
+.bg-main-btn {
+  background-color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--bg-color) !important;
+}
+.bg-inside {
+  background-color: var(--bg-inside-color);
+}
+.bg-card {
+  background-color: var(--bg-card);
+}
+.bg-card:hover {
+  background-color: #202020;
+}
+.border-1 {
+  border: 1px solid #dddd;
+}
+.w-80-percent {
+  width: 80%;
+}
+.h-list-songs {
+  height: calc(100vh - 138px) !important;
+}
+.play-btn-size {
+  width: 42px;
+  height: 42px;
+}
+.song-poster-size {
+  width: 150px;
+  height: 150px;
+}
+.card-song:hover .btn-play-song {
+  display: block;
+}
+.transition-btn {
+  transition: all 0.3s linear;
+}
+.animation-btn {
+  animation: animation-btn 0.3s linear;
+}
+.transaleteY-hover:hover {
+  transform: translateY(-6px);
+}
+
+@keyframes animation-btn {
+  0% {
+    opacity: 0.2;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.card-song + .card-song {
+  margin-left: 2%;
+}
+.max-line-1 {
+  line-height: 22px;
+  min-height: 22px;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.flex-one {
+  flex: 1;
+}
+
+.rotate-poster {
+    animation: rotate-animation 12s infinite linear;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.text-white {
+  color: white !important;
+}
+@keyframes animation-show-form {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animation-show-form {
+  animation: animation-show-form 0.3s linear;
+}
+@keyframes active_menu {
+  0% {
+    opacity: 0.2;
+    transform: translateX(120%)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0.3s)
+  }
+}
+.animation-menu {
+  animation: active_menu 0.3s linear;
+}
+.border-main {
+  border: 1px solid #ddd;
+}
